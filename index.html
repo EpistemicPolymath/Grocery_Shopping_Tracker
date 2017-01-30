@@ -12,29 +12,147 @@
 
 <form action="display_bill.php" method="post">
 
-    <h1 >Let's help you shop!</h1>
+    <h1>Let's help you shop!</h1>
 
     <h2>Pick the items you need, specify a quantity and then click submit.</h2>
 
     <label>What's your budget?<input type="text" name="userBudget"></label> <br>
 
 
-        <h2>Grocery Items:</h2>
+    <h2>Grocery Items:</h2>
 
     <table>
 
-    
+        <tr>
+            <td><img src="img/apple.png"></td>
+            <td><img src="img/banana.png"></td>
+            <td><img src="img/milk.png"></td>
+            <td><img src="img/cake.png"></td>
 
+        </tr>
+
+
+        <tr>
+            <td><label>Quantity
+
+                <select name="apple_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+            <td><label>Quantity
+
+                <select name="banana_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+
+            <td><Label>Quantity
+
+                <select name="milk_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+
+            </Label></td>
+
+            <td><label>Quantity
+
+                <select name="cake_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+        </tr>
+
+        <tr>
+            <td><img src="img/toast.png"></td>
+            <td><img src="img/cheese.png"></td>
+            <td><img src="img/cookie.png"></td>
+            <td><img src="img/water.jpg"></td>
+
+        </tr>
+
+
+        <tr>
+            <td><label>Quantity
+
+                <select name="toast_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+            <td><label>Quantity
+
+                <select name="cheese_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+            <td><label>Quantity
+
+                <select name="cookie_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+            <td><label>Quantity
+
+                <select name="water_Quan">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="0">0</option>
+
+                </select>
+
+            </label></td>
+
+        </tr>
 
 
     </table>
-
-
+    <br>
+    
     <button type="button" name="bill_result">Calculate Bill!</button>
     <button type="button" name="clear" onclick="reset();">Clear!</button>
 
 </form>
-
 
 
 </body>
