@@ -34,7 +34,7 @@ $total_Price = $apple_Price + $banana_Price + $milk_Price + $cake_Price + $toast
 
 
 #Tax Calculation
-if ($total_Price > 10) {
+if ($total_Price > 10.00) {
 
     $tax = .015;
 
@@ -48,11 +48,13 @@ if ($total_Price > 10) {
 
 $total_Amount = ($total_Price * 1.0) + $tax;
 
+#total_Amount = ($total_Price * $tax) + $total_Price;
+
 #Did it exceed Budget Test
 
 if ($total_Amount > $userBudget) {
 
-    $message = "You have exceeded your budget $userBudget, review your order!";
+    $message = "You have exceeded your budget $$userBudget, review your order!";
 
 
 } else {

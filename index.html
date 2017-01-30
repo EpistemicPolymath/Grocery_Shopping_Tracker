@@ -11,13 +11,13 @@
 </head>
 <body>
 
-<form action="display_bill.php" method="post">
+<form name="theForm" action="display_bill.php" method="post">
 
     <h1>Let's help you shop!</h1>
 
     <h2 class="topic_header">Pick the items you need, specify a quantity and then click submit.</h2>
 
-    <label class="budget">What's your budget?<input type="text" name="userBudget"></label> <br>
+    <label class="budget">What's your budget?<input id="budget" type="text" name="userBudget"></label> <br>
 
 
     <h2>Grocery Items:</h2>
@@ -157,11 +157,11 @@
     </table>
     <br>
 
-    <button type="submit" name="bill_result" class="button_Style">Calculate Bill!</button>
+    <button id="submitButton" type="submit" name="bill_result" class="button_Style">Calculate Bill!</button>
     <button type="button" name="clear" class="button_Style" onclick="reset();">Clear!</button>
 
 </form>
 
-
+<script src="validate.js" type="text/javascript"></script>
 </body>
 </html>
