@@ -53,6 +53,13 @@ $total_Price = " ";
 
     }
 
+    .water_img{
+
+        height: 128px;
+        width: 128px;
+
+    }
+
 </style>
 
 <table class="phpTable">
@@ -116,7 +123,7 @@ $total_Price = " ";
 
     <tr>
 
-        <td><img src="img/water.png"></td>
+        <td><img src="img/water.jpg" class="water_img"></td>
         <td><?= $water_Quan; ?></td>
         <td><?= $water_Price; ?></td>
     </tr>
