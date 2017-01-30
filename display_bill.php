@@ -28,6 +28,14 @@ $cookie_Price = " ";
 $water_Price = " ";
 $total_Price = " ";
 
+# Some more necessary Variable Declaration
+
+$tax = " ";
+$total_Amount = " ";
+$exceeded_Budget_Message = "You have exceeded your budget $userBudget";
+$budget_Success_message = "Thank you for shopping at our store!";
+
+
 
 
 ?>
@@ -129,6 +137,20 @@ $total_Price = " ";
     </tr>
 
 
+    <tr>
+
+        <td class="text_style">Total</td>
+        <td colspan="2"><?= $total_Price; ?></td>
+
+    </tr>
+
+
 </table>
+
+<p>
+
+    <!-- Budget testing output goes here -->
+
+</p>
 
 
