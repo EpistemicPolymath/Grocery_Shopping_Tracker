@@ -18,24 +18,51 @@ $water_Quan = $_POST['water_Quan'];
 
 #Declare Variables to Calculate Price and Budget
 
-$apple_Price = " ";
-$banana_Price = " ";
-$milk_Price = " ";
-$cake_Price = " ";
-$toast_Price = " ";
-$cheese_Price = " ";
-$cookie_Price = " ";
-$water_Price = " ";
-$total_Price = " ";
+$apple_Price = $apple_Quan * 1.00;
+$banana_Price = $banana_Quan * 0.5;
+$milk_Price = $milk_Quan * 2.8;
+$cake_Price = $cake_Quan * 10.00;
+$toast_Price = $toast_Quan * 1.6;
+$cheese_Price = $cheese_Quan * 4.5;
+$cookie_Price = $cookie_Quan * 5.00;
+$water_Price = $water_Quan * 1.00;
+$total_Price = $apple_Price + $banana_Price + $milk_Price + $cake_Price + $toast_Price + $cheese_Price + $cookie_Price
+    + $water_Price;
+
+
+
+
 
 # Some more necessary Variable Declaration
 
-$tax = " ";
-$total_Amount = " ";
-$exceeded_Budget_Message = "You have exceeded your budget $userBudget";
-$budget_Success_message = "Thank you for shopping at our store!";
+
+#Tax Calculation
+if ($total_Price > 10){
+
+    $tax = .015;
+
+} else{
+
+    $tax = .02;
+
+}
+
+#Total Amount Calculation
+
+$total_Amount = ($total_Price * 1.0) + $tax;
+
+#Did it exceed Budget Test
+
+if ($total_Amount > $userBudget){
+
+    $message = "You have exceeded your budget $userBudget, review your order!";
 
 
+
+} else {
+
+    $message = "Thank you for shopping at our store!";
+}
 
 
 ?>
@@ -150,6 +177,9 @@ $budget_Success_message = "Thank you for shopping at our store!";
 <p>
 
     <!-- Budget testing output goes here -->
+    <span class="tax">Tax = <?= $tax; ?></span> <br>
+    <span class="font_color">Total Amount = <?= $total_Amount ?></span> <br>
+    <?= $message; ?>
 
 </p>
 
