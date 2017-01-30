@@ -55,11 +55,26 @@ $total_Amount = ($total_Price * 1.0) + $tax;
 if ($total_Amount > $userBudget) {
 
     $message = "You have exceeded your budget $$userBudget, review your order!";
+    echo "
+    <style>
+        .font_color {
+            color: red;
+            }
+    </style>
+            ";
 
 
 } else {
 
     $message = "Thank you for shopping at our store!";
+
+    echo "
+    <style>
+        .font_color {
+            color: green;
+            }
+    </style>
+            ";
 }
 
 
