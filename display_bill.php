@@ -6,15 +6,15 @@
  */
 
 #Declare variables taken from HTML
-$userBudget = $_POST['userBudget'];
-$apple_Quan = $_POST['apple_Quan'];
-$banana_Quan = $_POST['banana_Quan'];
-$milk_Quan = $_POST['milk_Quan'];
-$cake_Quan = $_POST['cake_Quan'];
-$toast_Quan = $_POST['toast_Quan'];
-$cheese_Quan = $_POST['cheese_Quan'];
-$cookie_Quan = $_POST['cookie_Quan'];
-$water_Quan = $_POST['water_Quan'];
+$userBudget = filter_input(INPUT_POST,'userBudget');
+$apple_Quan = filter_input(INPUT_POST, 'apple_Quan');
+$banana_Quan = filter_input(INPUT_POST, 'banana_Quan');
+$milk_Quan = filter_input(INPUT_POST, 'milk_Quan');
+$cake_Quan = filter_input(INPUT_POST, 'cake_Quan');
+$toast_Quan = filter_input(INPUT_POST, 'toast_Quan');
+$cheese_Quan = filter_input(INPUT_POST, 'cheese_Quan');
+$cookie_Quan = filter_input(INPUT_POST, 'cookie_Quan');
+$water_Quan = filter_input(INPUT_POST, 'water_Quan');
 
 #Declare Variables to Calculate Price and Budget
 
