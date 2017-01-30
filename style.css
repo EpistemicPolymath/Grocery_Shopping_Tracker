@@ -1,0 +1,28 @@
+/* Some CSS styling for the page... */
+
+
+h1 {
+
+    color: #0066ff;
+
+}
+
+
+.topic_header{
+
+    color: #0033cc;
+
+}
+
+.budget{
+
+    color: #0066ff;
+
+}
+
+.water_img{
+
+    height: 128px;
+    width: 128px;
+
+}

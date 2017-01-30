@@ -7,6 +7,7 @@
         800768070_HW02
         Jennifer Tillman
     -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -14,9 +15,9 @@
 
     <h1>Let's help you shop!</h1>
 
-    <h2>Pick the items you need, specify a quantity and then click submit.</h2>
+    <h2 class="topic_header">Pick the items you need, specify a quantity and then click submit.</h2>
 
-    <label>What's your budget?<input type="text" name="userBudget"></label> <br>
+    <label class="budget">What's your budget?<input type="text" name="userBudget"></label> <br>
 
 
     <h2>Grocery Items:</h2>
@@ -89,7 +90,7 @@
             <td><img src="img/toast.png"></td>
             <td><img src="img/cheese.png"></td>
             <td><img src="img/cookie.png"></td>
-            <td><img src="img/water.jpg"></td>
+            <td><img src="img/water.jpg" class="water_img"></td>
 
         </tr>
 
@@ -143,12 +144,19 @@
 
             </label></td>
 
+        <tr>
+            <td colspan="4">
+
+                <img src="/img/cart.png">
+
+            </td>
+
         </tr>
 
 
     </table>
     <br>
-    
+
     <button type="button" name="bill_result">Calculate Bill!</button>
     <button type="button" name="clear" onclick="reset();">Clear!</button>
 
