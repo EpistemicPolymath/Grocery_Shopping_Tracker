@@ -46,7 +46,7 @@ if ($total_Price > 10.00) {
 
 #Total Amount Calculation
 
-$total_Amount = ($total_Price * 1.0) + $tax;
+$total_Amount = $total_Price * (1.0 + $tax);
 
 #total_Amount = ($total_Price * $tax) + $total_Price;
 
@@ -201,7 +201,7 @@ if ($total_Amount > $userBudget) {
 
     <!-- Budget testing output goes here -->
     <span class="font_bold">Tax = <?= $tax; ?></span> <br> <br>
-    <span class="font_bold">Total Amount = <?= $total_Amount ?></span> <br> <br>
+    <span class="font_bold">Total Amount = <?= "$" .$total_Amount ?></span> <br> <br>
     <span class="font_color"> <?= $message; ?></span>
 
 </p>
